@@ -1,0 +1,9 @@
+.show-lots{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.lots-error{
+    color:red;
+}

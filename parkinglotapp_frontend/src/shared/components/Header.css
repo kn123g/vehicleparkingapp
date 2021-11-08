@@ -1,0 +1,24 @@
+.head{
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.head #home-btn{
+    position:absolute;
+    left:0;
+    margin:1em;
+}
+
+.head .btn{
+    width: 10%;
+    margin:1em;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+}
