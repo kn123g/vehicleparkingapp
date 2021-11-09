@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={'/parkinglot'}>
       <main>
       <Header/>
       <Switch>
@@ -21,16 +21,16 @@ function App() {
         <Route path="/welcome" exact>
           <Welcome/>
         </Route>
-        <Route path="/CheckIn" exact>
+        <Route path="/checkin" exact>
           <CheckIn/>
         </Route>
-        <Route path="/CheckOut" exact>
+        <Route path="/checkout" exact>
           <CheckOut/>
         </Route>
-        <Route path="/FindVehicle" exact>
+        <Route path="/findvehicle" exact>
           <FindVehicle/>
         </Route>
-        <Route path="/ShowLots" exact>
+        <Route path="/showlots" exact>
           <ShowLots/>
         </Route>
         <Redirect to="/home"/>

@@ -41,14 +41,14 @@ export default function FindVehicle(){
         <div className="div-btn">
         <input type="submit" className="btn" value="FIND VEHICLE"/>
         </div>
-        {parkingHistory.length > 0 ? <table>
+        {parkingHistory?.length > 0 ? <table>
             <thead>
                 <tr>
-                    {headers.map((header,i) => <th key={i+'th'}>{header}</th>)}
+                    {headers?.map((header,i) => <th key={i+'th'}>{header}</th>)}
                 </tr>
             </thead>
             <tbody>
-                {parkingHistory.map((history,i) => <tr key={i+'td'}><td>{history.lot}</td><td>{history.entry_time}</td><td>{history.exit_time}</td></tr>)}
+                {parkingHistory?.map((history,i) => <tr key={i+'td'}><td>{history.lot}</td><td>{history.entry_time}</td><td>{history.exit_time}</td></tr>)}
             </tbody>
         </table> : null }
         {findVehicleState.status ? <div className="find-msg">

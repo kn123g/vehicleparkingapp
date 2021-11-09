@@ -3,16 +3,16 @@ import './Welcome.css';
 export default function Welcome(){
     const history = useHistory();
     const checkInHandle = ()=>{
-        history.push("/CheckIn")
+        history.push("/checkin")
     }
     const checkOutHandle = ()=>{
-        history.push("/CheckOut")
+        history.push("/checkout")
     }
     const findVehicle = ()=>{
-        history.push("/FindVehicle")
+        history.push("/findvehicle")
     }
     const showLots = ()=>{
-        history.push("/ShowLots")
+        history.push("/showLots")
     }
     return(
         <div className="content">
