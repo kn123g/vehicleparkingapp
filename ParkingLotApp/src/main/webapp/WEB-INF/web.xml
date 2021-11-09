@@ -19,19 +19,19 @@
  </servlet>
  <servlet-mapping>
     <servlet-name>CheckOut</servlet-name>
-    <url-pattern>/CheckOut</url-pattern>
+    <url-pattern>/checkout</url-pattern>
  </servlet-mapping>  
  <servlet-mapping>
     <servlet-name>CheckIn</servlet-name>
-    <url-pattern>/CheckIn</url-pattern>
+    <url-pattern>/checkin</url-pattern>
  </servlet-mapping>  
  <servlet-mapping>
     <servlet-name>FindVehicle</servlet-name>
-    <url-pattern>/FindVehicle/*</url-pattern>
+    <url-pattern>/findvehicle/*</url-pattern>
  </servlet-mapping> 
  <servlet-mapping>
     <servlet-name>ShowLots</servlet-name>
-    <url-pattern>/ShowLots</url-pattern>
+    <url-pattern>/showlots</url-pattern>
  </servlet-mapping> 
    <welcome-file-list>
     <welcome-file>index.html</welcome-file>

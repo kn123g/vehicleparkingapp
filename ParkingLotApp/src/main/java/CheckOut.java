@@ -16,7 +16,7 @@ import com.google.gson.Gson;
 import parking.MainService;
 import parking.ServiceResponse;
 
-@WebServlet("/CheckOut")
+@WebServlet("/checkout")
 public class CheckOut extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

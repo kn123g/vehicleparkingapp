@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 
 import parking.MainService;
 
-@WebServlet("/CheckIn")
+@WebServlet("/checkin")
 public class CheckIn extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;

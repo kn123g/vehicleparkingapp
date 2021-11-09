@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import parking.MainService;
 import parking.ServiceResponse;
 
-@WebServlet("/ShowLots")
+@WebServlet("/showlots")
 public class ShowLots extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private MainService obj = MainService.instance;

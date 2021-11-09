@@ -12,7 +12,7 @@ import com.google.gson.Gson;
 import parking.MainService;
 import parking.ServiceResponse;
 
-@WebServlet("/FindVehicle/*")
+@WebServlet("/findvehicle/*")
 public class FindVehicle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
