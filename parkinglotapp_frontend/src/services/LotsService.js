@@ -33,7 +33,7 @@ export function findVehicle(FindInput){
 
 
 export function showLots(vehicle_number){
-    return axios.get(api+'ShowLots')
+    return axios.get(api+'showlots')
     .then((result) =>{
         return {message:result.data,status:true};
     })
