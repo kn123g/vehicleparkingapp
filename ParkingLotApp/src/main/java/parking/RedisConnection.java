@@ -92,7 +92,7 @@ public class RedisConnection {
 		   try {
 			   long time = new Date().getTime();
 			   Map<String,String> history_properties = Map.of(
-					    "entry_time", entry.toString(),
+					    "entry_time", sdf.format(entry),
 					    "lot", lot ,
 					    "exit_time", sdf.format(exit)
 				);

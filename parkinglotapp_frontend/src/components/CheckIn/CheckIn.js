@@ -31,9 +31,22 @@ export default function CheckIn(){
         const d = new Date(date);
         console.log(d)
         let h =  d.getHours();
-        let m = d.getMinutes();
-        let a = (h > 12) ? (h-12 + ':' + m+ ':'+d.getSeconds() +' PM') : (((h===0)?'12:' + m +':'+d.getSeconds()+' AM':h +':' + m +':'+d.getSeconds()+' PM') );
-        return d.getDate() +"-"+  (d.getMonth()+1) +"-"+ d.getFullYear() +" "  + a;
+        let min = d.getMinutes();
+        let sec = d.getSeconds();
+        var hours = h;
+        var mid='AM';
+        if(hours===0){ //At 00 hours we need to show 12 am
+        hours=12;
+        }
+        else if(hours>12)
+        {
+        hours=hours%12;
+        mid='PM';
+        }else if(hours===12)
+        {
+        mid='PM';
+        }
+        return d.getDate() +"-"+  (d.getMonth()+1) +"-"+ d.getFullYear() +" "  + hours + ":" +min+":"+sec+" "+mid;
     }
     let updateFormValues = (e) => {
         switch(e.target.id){
